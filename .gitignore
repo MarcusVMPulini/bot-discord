@@ -1,8 +1,0 @@
-# Ignorar node_modules
-node_modules/
-
-# Ignorar variáveis de ambiente
-.env
-
-# Ignorar logs
-*.log
