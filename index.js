@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { Client, GatewayIntentBits, PermissionsBitField } = require('discord.js');
 const client = new Client({
     intents: [
@@ -8,7 +9,7 @@ const client = new Client({
     ]
 });
 
-const TOKEN = 'MTM1ODIwMjY0NDQzODU4MTI5MA.GRwrQR.lqSKKBqkcvONqCbPuRTo3cdBcEgNGzoJIzi4hE';
+const TOKEN = process.env.DISCORD_TOKEN;
 const PREFIX = '!';
 const CATEGORIA_ID = '1358081315966156900'; // ID da categoria desejada
 const CARGOS_PERMITIDOS = ['Gerente', '01', '02'];
