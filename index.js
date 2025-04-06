@@ -9,7 +9,7 @@ const client = new Client({
     ]
 });
 
-const TOKEN = process.env.DISCORD_TOKEN;
+client.login(process.env.DISCORD_TOKEN);
 const PREFIX = '!';
 const CATEGORIA_ID = '1358081315966156900'; // ID da categoria desejada
 const CARGOS_PERMITIDOS = ['Gerente', '01', '02'];
